@@ -48,7 +48,7 @@ section{
 }
 .max-width{
     max-width: 1300px;
-    padding: 0 60px;
+    padding:0 60px;
     margin: auto;
 }
 .about, .services, .skills, .teams, .contact, footer{
@@ -241,7 +241,7 @@ section .title::after{
     content: "who i am";
 }
 .about .about-content .left{
-    width: 45%;
+    
 }
 .about .about-content .left img{
     height: 400px;
@@ -327,6 +327,10 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+#services{
+    border-radius: 6px;
+    padding: 30px;
+}
 
 /* skills section styling */
 
@@ -410,7 +414,7 @@ section .title::after{
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
-    padding: 25px 35px;
+    padding: 30px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -419,23 +423,24 @@ section .title::after{
     background: crimson;
 }
 .teams .carousel .card .box{
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    
 }
+
 .teams .carousel .card:hover .box{
     transform: scale(1.05);
 }
 .teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
@@ -444,6 +449,14 @@ section .title::after{
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
+#card{
+    width: 300px;
+    padding: 40px;
+    display: inline-flex;
+    margin-bottom: 20px;
+    
+}
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -647,6 +660,7 @@ footer span a:hover{
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
+        
     }
     .skills .skills-content .column,
     .contact .contact-content .column{
@@ -670,6 +684,7 @@ footer span a:hover{
     }
     .services .serv-content .card{
         width: 100%;
+        padding: 20px;
     }
 }
 
