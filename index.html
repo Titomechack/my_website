@@ -56,7 +56,23 @@
                     <div class="column right">
                         <div class="text">I'm Tito and I'm a <span class="typing-2"></span></div>
                         <p>With a strong foundation in coding and a keen eye for aesthetics, I specialize in crafting digital experiences that seamlessly blend form and function. Over the years, I've honed my skills to create visually stunning websites and user interfaces that not only look great but also provide exceptional user experiences. I thrive on the challenges of turning innovative ideas into pixel-perfect designs and user-friendly applications. Let's collaborate and bring your digital visions to life.</p>
-                        <a href="#">Download CV</a>
+                        <button type="button" id="downloadButton">Download CV &nbsp; &nbsp; <i class="bi bi-download"></i></button>
+
+                        <script>
+                            // JavaScript function to handle the button click event
+                            document.getElementById('downloadButton').addEventListener('click', function () {
+                                // Define the direct link to the PDF file on GitHub
+                                var pdfUrl = 'https://github.com/Hjeanbosco/myportfoliosite/raw/main/assets/cv/BoscoCv.pdf'; // Use the "raw" URL
+                                
+                                // Create a temporary anchor element to trigger the download
+                                var a = document.createElement('a');
+                                a.href = pdfUrl;
+                                a.download = 'BoscoCv.pdf'; // Rename the downloaded file if needed
+                                document.body.appendChild(a);
+                                a.click();
+                                document.body.removeChild(a);
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
