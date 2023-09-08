@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 
 <body>
@@ -39,7 +46,14 @@
                 <div class="home-content">
                     <div class="text-1">Hello, my name is</div>
                     <div class="text-2">Niyomutabazi Tito</div>
-                    <div class="text-3">And I'm a software developer, graphic design <span class="typing"></span></div>
+                    <div class="text-3">And I'm a <span class="typing"></span></div>
+                    <div class="social-icons">
+                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/tito-niyomutabazi-7b671b256" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Titomechack" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    
+
                     <a href="#">Hire me</a>
                 </div>
             </div>
@@ -56,24 +70,24 @@
                     <div class="column right">
                         <div class="text">I'm Tito and I'm a <span class="typing-2"></span></div>
                         <p>With a strong foundation in coding and a keen eye for aesthetics, I specialize in crafting digital experiences that seamlessly blend form and function. Over the years, I've honed my skills to create visually stunning websites and user interfaces that not only look great but also provide exceptional user experiences. I thrive on the challenges of turning innovative ideas into pixel-perfect designs and user-friendly applications. Let's collaborate and bring your digital visions to life.</p>
-                        <button type="button" id="downloadButton">Download CV &nbsp; &nbsp; <i class="bi bi-download"></i></button>
+                  <button type="button" id="downloadButton">Download CV &nbsp; &nbsp; <i class="bi bi-download"></i></button>
 
-                        <script>
-                            // JavaScript function to handle the button click event
-                            document.getElementById('downloadButton').addEventListener('click', function () {
-                                // Define the raw link to the PDF file on GitHub
-                                var pdfUrl = 'https://raw.githubusercontent.com/Titomechack/my_website_profile.com/main/Tito-cv.pdf';
-                                
-                                // Create a temporary anchor element to trigger the download
-                                var a = document.createElement('a');
-                                a.href = pdfUrl;
-                                a.download = 'Tito-cv.pdf'; // Rename the downloaded file if needed
-                                document.body.appendChild(a);
-                                a.click();
-                                document.body.removeChild(a);
-                            });
-                        </script>
-                        
+<script>
+    // JavaScript function to handle the button click event
+    document.getElementById('downloadButton').addEventListener('click', function () {
+        // Define the raw link to the PDF file on GitHub
+        var pdfUrl = 'https://raw.githubusercontent.com/Titomechack/my_website_profile.com/main/Tito-cv.pdf';
+        
+        // Create a temporary anchor element to trigger the download
+        var a = document.createElement('a');
+        a.href = pdfUrl;
+        a.download = 'Tito-cv.pdf'; // Rename the downloaded file if needed
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    });
+</script>
+
                     </div>
                 </div>
             </div>
